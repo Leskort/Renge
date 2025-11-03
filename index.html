@@ -35,9 +35,153 @@
           <a href="#contact" class="btn btn-primary">Узнайте стоимость для вашей модели</a>
           <a href="#contact" class="btn btn-secondary">Получить бесплатную консультацию</a>
         </div>
+        <div class="filter-bar">
+          <div class="select"><select aria-label="Brand"><option>Land Rover</option><option>Jaguar</option></select></div>
+          <div class="select"><select aria-label="Model"><option>Range Rover</option><option>Range Rover Sport</option><option>Defender</option><option>Discovery 5</option></select></div>
+          <div class="select"><select aria-label="Year"><option>2023+</option><option>2018–2022</option><option>2013–2017</option></select></div>
+          <a href="#services" class="btn btn-primary">Go to services</a>
+        </div>
       </div>
     </section>
 
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="card"><h3>Retrofits</h3><p>Заводские опции — доустановка под модель и год.</p><p><a class="btn" href="#contact">Go to services</a></p></div>
+          <div class="card"><h3>Features activation</h3><p>Активация скрытых функций и программных опций.</p><p><a class="btn" href="#contact">Go to services</a></p></div>
+          <div class="card"><h3>Power upgrade</h3><p>Индивидуальный чип‑тюнинг для JLR.</p><p><a class="btn" href="#contact">Go to services</a></p></div>
+          <div class="card"><h3>Accessories</h3><p>Оригинальные аксессуары и комплекты.</p><p><a class="btn" href="#contact">Go to services</a></p></div>
+        </div>
+        <div class="models">
+          <h3>Jaguar Land Rover — выберите модель</h3>
+          <div class="chips">
+            <span class="chip">New Range Rover Evoque / L551</span>
+            <span class="chip">Range Rover Velar / L560</span>
+            <span class="chip">Discovery 5 / L462</span>
+            <span class="chip">Discovery Sport / L550</span>
+            <span class="chip">Range Rover Sport / L494</span>
+            <span class="chip">Range Rover / L405</span>
+            <span class="chip">New Range Rover Sport / L461</span>
+            <span class="chip">New Range Rover / L460</span>
+            <span class="chip">New Defender 2020 / L663</span>
+            <span class="chip">Discovery 4 / L319</span>
+            <span class="chip">Range Rover Sport / L320</span>
+            <span class="chip">Range Rover / L322</span>
+            <span class="chip">Defender / L316</span>
+            <span class="chip">Freelander 2 / L359</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="top-orders" class="section alt">
+      <div class="container">
+        <h2>Top orders</h2>
+        <div class="grid cards-compact">
+          <div class="card item"><h3>Adaptive Cruise Control + Traffic Jam Assist</h3><div class="actions"><a class="btn btn-primary" href="#contact">Add to cart</a><a class="btn" href="#contact">Details</a></div></div>
+          <div class="card item"><h3>Dynamic Mode</h3><div class="actions"><a class="btn btn-primary" href="#contact">Add to cart</a><a class="btn" href="#contact">Details</a></div></div>
+          <div class="card item"><h3>Interactive Driver Display (TFT)</h3><div class="actions"><a class="btn btn-primary" href="#contact">Add to cart</a><a class="btn" href="#contact">Details</a></div></div>
+          <div class="card item"><h3>Blind Spot System</h3><div class="actions"><a class="btn btn-primary" href="#contact">Add to cart</a><a class="btn" href="#contact">Details</a></div></div>
+          <div class="card item"><h3>Heated & Cooled front seats</h3><div class="actions"><a class="btn btn-primary" href="#contact">Add to cart</a><a class="btn" href="#contact">Details</a></div></div>
+          <div class="card item"><h3>Soft door close (Genuine)</h3><div class="actions"><a class="btn btn-primary" href="#contact">Add to cart</a><a class="btn" href="#contact">Details</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="container">
+        <h2>Our works</h2>
+        <div class="grid gallery">
+          <div class="work-card"></div>
+          <div class="work-card"></div>
+          <div class="work-card"></div>
+          <div class="work-card"></div>
+          <div class="work-card"></div>
+          <div class="work-card"></div>
+        </div>
+        <p style="margin-top:16px"><a class="btn" href="#contact">See all</a></p>
+      </div>
+    </section>
+
+    <section id="articles" class="section alt">
+      <div class="container">
+        <h2>Latest articles</h2>
+        <div class="grid cards-compact">
+          <article class="card"><h3>DEFENDER 11.4″ PiVi Pro display retrofit</h3><p>Крупный дисплей с высокой яркостью и площадью экрана.</p><a class="btn" href="#contact">Read</a></article>
+          <article class="card"><h3>DISCOVERY 5 2022MY+ — восемь систем за 2 дня</h3><p>Апгрейды на платформе EVA 2.0 c PiVi Pro.</p><a class="btn" href="#contact">Read</a></article>
+          <article class="card"><h3>Range Rover 2020MY: HUD и ACC</h3><p>Особенности дооснащения Head‑Up Display и адаптивного круиза.</p><a class="btn" href="#contact">Read</a></article>
+        </div>
+        <p style="margin-top:16px"><a class="btn" href="#contact">See more</a></p>
+      </div>
+    </section>
+
+    <section id="offer" class="section">
+      <div class="container">
+        <h2>LR‑CHIP retrofitting specialist</h2>
+        <p>Любая заводская система может быть доустановлена, если соответствует году выпуска и модели.</p>
+        <form name="offer" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form" autocomplete="off" novalidate>
+          <input type="hidden" name="form-name" value="offer">
+          <p class="hidden"><label>Не заполняйте это поле: <input name="bot-field"></label></p>
+          <div class="form-row">
+            <label for="offerName">Your name</label>
+            <input id="offerName" name="name" type="text" required maxlength="100">
+          </div>
+          <div class="form-row">
+            <label for="offerVin">Vehicle VIN number</label>
+            <input id="offerVin" name="vin" type="text" required maxlength="32" pattern="[A-HJ-NPR-Z0-9]{11,17}">
+          </div>
+          <div class="form-row">
+            <label for="offerContact">Mobile number or email address</label>
+            <input id="offerContact" name="contact" type="text" required maxlength="100">
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Get a list of services</button>
+          </div>
+        </form>
+        <p class="muted">Спасибо за заявку. Мы свяжемся с вами в ближайшее время.</p>
+      </div>
+    </section>
+
+    <section id="facts" class="section alt">
+      <div class="container">
+        <h2>Few facts about us</h2>
+        <ul class="list">
+          <li>1‑year warranty for all retrofit systems</li>
+          <li>Only genuine parts and equipment</li>
+          <li>Specializing exclusively in Land Rover, Jaguar vehicles</li>
+          <li>8+ years experience, 1400+ JLR vehicles</li>
+          <li>600+ posts in Instagram with JLR upgrades</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2>Contacts in the UK</h2>
+        <p>Unit 29 Integra:ME, Parkwood Industrial Estate, Bircholt Road, Maidstone, ME15 9GQ</p>
+        <p class="cta-group"><a class="btn btn-primary" href="tel:+447840000321">+44 784 0000 321</a></p>
+        <h3>Schedule</h3>
+        <ul class="list">
+          <li>Mon–Fri 10:00–19:00</li>
+          <li>Sat — working by agreement</li>
+          <li>Sun — day off</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="team" class="section alt">
+      <div class="container">
+        <h2>Our team</h2>
+        <div class="team-grid">
+          <div class="team-card"><div class="avatar"></div><h3>Jenya (UK Branch)</h3><p class="muted">Certified Master Technician</p><p class="muted">JLR Level‑4, 7+ years</p></div>
+          <div class="team-card"><div class="avatar"></div><h3>Jenya (UK, UA)</h3><p class="muted">Retrofitting Specialist</p><p class="muted">8+ years with JLR</p></div>
+          <div class="team-card"><div class="avatar"></div><h3>Chief Electrician</h3><p class="muted">Car security systems</p><p class="muted">10+ years, JLR 7+ years</p></div>
+          <div class="team-card"><div class="avatar"></div><h3>Serhiy (UA)</h3><p class="muted">Chief Technician</p><p class="muted">Dealer 5 yrs, JLR 10+ yrs</p></div>
+          <div class="team-card"><div class="avatar"></div><h3>Ihor (UA)</h3><p class="muted">Parts Specialist</p><p class="muted">JLR 4+ years</p></div>
+        </div>
+      </div>
+    </section>
     <section id="benefits" class="section">
       <div class="container">
         <h2>Почему стоит выбрать чип-тюнинг от LR-Chip?</h2>
