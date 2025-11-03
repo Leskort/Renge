@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f14">
+  <title>Vehicles — LR‑Chip</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="/">LR‑Chip</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Меню</button>
+      <nav id="siteNav" class="nav" aria-label="Главное меню">
+        <a class="active" href="/vehicles.html">Vehicles</a>
+        <a href="/our-works.html">Our works</a>
+        <a href="/car-projects.html">Car projects</a>
+        <a href="/contacts.html" class="btn btn-primary">Contacts</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="section hero" aria-label="Vehicles">
+      <div class="container">
+        <h1>Vehicles</h1>
+        <p class="subheading">Выберите бренд и модель для подбора услуг и апгрейдов.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab active" data-tab="lr">Land Rover</button>
+          <button class="tab" data-tab="jag">Jaguar</button>
+        </div>
+        <div class="grid models-grid" id="tab-lr">
+          <div class="card"><h3>New Range Rover Sport 2023+</h3></div>
+          <div class="card"><h3>New Range Rover 2022+</h3></div>
+          <div class="card"><h3>New Defender 2020+</h3></div>
+          <div class="card"><h3>Range Rover Evoque 2019+</h3></div>
+          <div class="card"><h3>Range Rover Velar 2017+</h3></div>
+          <div class="card"><h3>Discovery Sport 2015+</h3></div>
+          <div class="card"><h3>Discovery 5 2017+</h3></div>
+          <div class="card"><h3>Range Rover Sport 2014–2022</h3></div>
+          <div class="card"><h3>Range Rover 2013–2021</h3></div>
+          <div class="card"><h3>Discovery 4 2010–2016</h3></div>
+          <div class="card"><h3>Range Rover Sport 2010–2013</h3></div>
+          <div class="card"><h3>Range Rover 2010–2012</h3></div>
+          <div class="card"><h3>Defender 2007–2016</h3></div>
+          <div class="card"><h3>Freelander 2 2006–2014</h3></div>
+        </div>
+        <div class="grid models-grid hidden" id="tab-jag">
+          <div class="card"><h3>F‑PACE</h3></div>
+          <div class="card"><h3>E‑PACE</h3></div>
+          <div class="card"><h3>XF</h3></div>
+          <div class="card"><h3>XE</h3></div>
+          <div class="card"><h3>F‑TYPE</h3></div>
+          <div class="card"><h3>I‑PACE</h3></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> LR‑Chip.</p>
+    </div>
+  </footer>
+  <script src="/script.js" defer></script>
+  <script defer>
+    (function(){
+      var tabs = document.querySelectorAll('.tab');
+      tabs.forEach(function(btn){
+        btn.addEventListener('click', function(){
+          tabs.forEach(function(b){ b.classList.remove('active'); });
+          btn.classList.add('active');
+          var lr = document.getElementById('tab-lr');
+          var jag = document.getElementById('tab-jag');
+          if (btn.dataset.tab === 'lr') { lr.classList.remove('hidden'); jag.classList.add('hidden'); }
+          else { jag.classList.remove('hidden'); lr.classList.add('hidden'); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+
+

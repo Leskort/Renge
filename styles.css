@@ -149,5 +149,17 @@ p { font-size: var(--fs-md); color: var(--fg); }
   .btn { width: 100%; }
 }
 
+/* Tabs */
+.tabs { display: flex; gap: 8px; margin-bottom: var(--space-6); }
+.tab { background: var(--surface); color: var(--fg); border: 1px solid var(--border); padding: 10px 14px; border-radius: 999px; cursor: pointer; }
+.tab.active { background: linear-gradient(180deg, var(--primary), var(--primary-600)); color: #0b0f14; border-color: transparent; }
+.hidden { display: none !important; }
+
+/* Mosaic gallery */
+.mosaic { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-3); }
+.tile { aspect-ratio: 16/9; background: linear-gradient(135deg, rgba(250,204,21,.25), rgba(255,255,255,.04)); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); }
+
+/* Footer columns (optional extension later) */
+
 
 

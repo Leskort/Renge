@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f14">
+  <title>Contacts — LR‑Chip</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="/">LR‑Chip</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav id="siteNav" class="nav" aria-label="Main menu">
+        <a href="/vehicles.html">Vehicles</a>
+        <a href="/our-works.html">Our works</a>
+        <a href="/car-projects.html">Car projects</a>
+        <a class="active btn btn-primary" href="/contacts.html">Contacts</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="hero">
+      <div class="container">
+        <h1>Contacts</h1>
+        <div class="grid" style="margin-top:16px">
+          <div class="card">
+            <h3>United Kingdom</h3>
+            <p>Unit 29 Integra:ME<br>Parkwood Industrial Estate<br>Bircholt Road, Maidstone<br>ME15 9GQ</p>
+            <p><a class="btn" href="tel:+447840000321">+44 784 0000 321</a></p>
+          </div>
+          <div class="card">
+            <h3>Ukraine</h3>
+            <p>Kraynya st. 1<br>Kyiv, 02217</p>
+            <p><a class="btn" href="tel:+380670000321">+38 067 0000 321</a></p>
+          </div>
+          <div class="card">
+            <h3>Work schedule</h3>
+            <p>Mon–Fri 10:00–19:00<br>Sat — by appointment<br>Sun — day off</p>
+            <p>Email: <a href="mailto:lr.chip.com.ua@gmail.com">lr.chip.com.ua@gmail.com</a></p>
+          </div>
+          <div class="card">
+            <h3>Would you like a call back?</h3>
+            <form name="contact-callback" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form" autocomplete="off" novalidate>
+              <input type="hidden" name="form-name" value="contact-callback">
+              <p class="hidden"><label>Do not fill: <input name="bot-field"></label></p>
+              <div class="form-row"><label for="cbName">Your name</label><input id="cbName" name="name" required maxlength="100"></div>
+              <div class="form-row"><label for="cbVin">Vehicle VIN number</label><input id="cbVin" name="vin" required maxlength="32" pattern="[A-HJ-NPR-Z0-9]{11,17}"></div>
+              <div class="form-row"><label for="cbContact">Mobile number or email address</label><input id="cbContact" name="contact" required maxlength="100"></div>
+              <div class="form-actions"><button type="submit" class="btn btn-primary">Get an offer</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="map-placeholder" style="height:360px; border:1px solid var(--border); border-radius: var(--radius); background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)); display:grid; place-items:center; color:var(--muted);">Map placeholder</div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo"><div class="container footer-inner"><p>© <span id="year"></span> LR‑Chip.</p></div></footer>
+  <script src="/script.js" defer></script>
+</body>
+</html>
+
+
